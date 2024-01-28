@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialog : MonoBehaviour
+public class MikeDialog : MonoBehaviour
 {
     public Image dia1;
     public Image dia2;
@@ -12,8 +12,6 @@ public class Dialog : MonoBehaviour
     public Image dia5;
     public Image dia6;
     public Image dia7;
-    public Image dia8;
-    public Image dia9;
 
     public BoxCollider2D boxCollider;
  
@@ -30,8 +28,6 @@ public class Dialog : MonoBehaviour
         dia6.enabled = false;
         dia6.enabled = false;
         dia7.enabled = false;
-        dia8.enabled = false;
-        dia9.enabled = false;
         JokeBtn.SetActive(false);
     }
 
@@ -65,15 +61,6 @@ public class Dialog : MonoBehaviour
                 }
                  else if(dia7.enabled) {
                     dia7.enabled = false;
-                    dia8.enabled = true;
-                }
-                else if(dia8.enabled) {
-                    dia8.enabled = false;
-                    dia9.enabled = true;
-
-                }
-                else if(dia9.enabled){
-                    dia9.enabled = false;
                     JokeBtn.SetActive(true);
                 }
             }

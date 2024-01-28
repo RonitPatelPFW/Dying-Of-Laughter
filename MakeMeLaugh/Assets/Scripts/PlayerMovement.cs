@@ -30,13 +30,5 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
     }
-     private void OnCollisionEnter2D(Collision2D collision) {
-        
-        if (collision.gameObject.CompareTag("npc"))
-        {
-            Debug.Log("Collision with object having tag 'npc'");
-
-        }
-
-    }
+     
 }
