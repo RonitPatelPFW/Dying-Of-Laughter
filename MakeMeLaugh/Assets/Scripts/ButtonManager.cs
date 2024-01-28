@@ -23,6 +23,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void tellJoke()
     {
+        options.SetActive(false);
         preJoke.enabled = true;
         randomNumber = Random.Range(0, 2);
     }
