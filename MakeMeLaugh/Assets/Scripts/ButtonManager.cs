@@ -24,8 +24,7 @@ public class ButtonManager : MonoBehaviour
     public void tellJoke()
     {
         preJoke.enabled = true;
-        randomNumber = Random.Range(0, 1);
-        
+        randomNumber = Random.Range(0, 2);
     }
     void Update() {
         if(randomNumber == 1){
